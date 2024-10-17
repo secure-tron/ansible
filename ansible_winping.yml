@@ -1,8 +1,8 @@
 ---
-name:  Windows auth / ping test
-hosts:  all
-become:  false
-gather_facts:  false
-tasks:
-name: pingtest
-win_ping
+  name:  Windows auth / ping test
+  hosts:  all
+  become:  false
+  gather_facts:  false
+  tasks:
+    name: pingtest
+    win_ping
