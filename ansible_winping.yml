@@ -2,7 +2,7 @@
 - name:  Windows auth ping test
   hosts:  Windows-DC
   become:  false
-  gather_facts:  false
+  gather_facts:  true
   tasks:
   - name: pingtest
     win_ping:
