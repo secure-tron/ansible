@@ -1,6 +1,6 @@
 ---
  - name:  Windows auth ping test
-  hosts:  all
+  hosts:  Windows-DC
   become:  false
   gather_facts:  false
   tasks:
