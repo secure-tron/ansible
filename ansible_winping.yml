@@ -1,5 +1,5 @@
 ---
-  name:  Windows auth / ping test
+  name:  Windows auth ping test
   hosts:  all
   become:  false
   gather_facts:  false
