@@ -6,7 +6,7 @@
   tasks:
   - name:  run powershell command
     ansible.windows.win_powershell:
-    script: |
-      echo "Hello World"
+      script: |
+        echo "Hello World"
       no_log: true
       register: psout
