@@ -8,5 +8,3 @@
     ansible.windows.win_powershell:
       script: |
         certutil
-    no_log: true
-    register: psout
