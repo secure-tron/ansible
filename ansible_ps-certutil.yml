@@ -8,5 +8,5 @@
     ansible.windows.win_powershell:
       script: |
         echo "Hello World"
-      no_log: true
-      register: psout
+    no_log: true
+    register: psout
