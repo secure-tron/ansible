@@ -5,7 +5,7 @@
   gather_facts:  false
   tasks:
   - name: run powershell command
-        ansible.windows.win_powershell:
+    ansible.windows.win_powershell:
     script: |
       echo "Hello World"
       no_log: true
