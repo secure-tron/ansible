@@ -3,10 +3,10 @@
   become:  false
   gather_facts:  false
   tasks:
-- name: run powershell command
-    shell: >
-      certutil     
-    args:
-      executable: /usr/bin/pwsh
-    no_log: true
-    register: psout
+  - name: run powershell command
+      shell: >
+        certutil     
+      args:
+        executable: /usr/bin/pwsh
+      no_log: true
+      register: psout
