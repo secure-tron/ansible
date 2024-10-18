@@ -4,7 +4,7 @@
   gather_facts: no
   tasks:
     - name: Run PowerShell command to get issued certificates
-      win_shell: certutil -view -restrict "CertificateTemplate:WebServer" | ConvertTo-Json
+      win_shell: certutil -view -restrict "Disposition=20" | ConvertTo-Json
       register: cert_output
 
     - name: Display issued certificates
