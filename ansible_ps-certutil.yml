@@ -7,4 +7,4 @@
   - name:  run powershell command
     ansible.windows.win_powershell:
       script: |
-        certutil
+        certutil 
