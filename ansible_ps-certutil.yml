@@ -7,4 +7,8 @@
   - name:  run powershell command
     ansible.windows.win_powershell:
       script: |
-        certutil -view -restrict "Disposition=20" csv
+        certutil -view -restrict "CertificateTemplate:WebServer" | ConvertTo-Json
+      register: cert_output
+- name: Display issued certificates
+      debug:
+        msg: "{{ cert_output.stdout }}"
