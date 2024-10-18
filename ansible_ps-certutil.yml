@@ -9,6 +9,6 @@
       script: |
         certutil -view -restrict "Disposition=20" | ConvertTo-Json
       register: cert_output
-- name: Display issued certificates
+  - name: Display issued certificates
       debug:
         msg: "{{ cert_output.stdout }}"
