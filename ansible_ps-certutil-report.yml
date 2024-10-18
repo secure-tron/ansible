@@ -1,0 +1,12 @@
+---
+- name: Run certutil command and output issued certificates
+  hosts: Windows-DC
+  gather_facts: no
+  tasks:
+    - name: Run PowerShell command to get issued certificates
+      win_shell: certutil -view -restrict "CertificateTemplate:WebServer" | ConvertTo-Json
+      register: cert_output
+
+    - name: Display issued certificates
+      debug:
+        msg: "{{ cert_output.stdout }}"
