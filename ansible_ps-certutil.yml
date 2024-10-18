@@ -11,4 +11,4 @@
       register: cert_output
 - name:  Display issued certificates
   debug:
-  msg: "{{ cert_output.stdout }}"
+    msg: "{{ cert_output.stdout }}"
