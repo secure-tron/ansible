@@ -1,4 +1,5 @@
-- name:  Windows auth ping test
+---
+- name:  Windows ps test
   hosts:  Windows-DC
   become:  false
   gather_facts:  false
